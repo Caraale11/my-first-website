@@ -194,3 +194,175 @@ footer {
 }
 
 }
+/* ===== MODERN WEBSITE DESIGN ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Nvigation */
+nav {
+    background:#111827;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a { 
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Account */
+.account {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.account h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.account input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid#ddd;
+    border-radius: 8px;
+}
+
+.account button {
+    padding: 11px 18px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.account button:hover {
+    background: #1d4ed8;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: white;
+}
+
+.hero h1 { 
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.hero p {
+    color:#555;
+}
+
+/* Buttons */
+button {
+    cusor: pointer;
+    transition: 0.2s;
+}
+
+/* SectionS */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Service cards */
+.services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    backgrond: white;
+    padding:25px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translatey(-5px);
+}
+
+/* Contact form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
