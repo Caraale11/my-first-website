@@ -7,10 +7,22 @@
 <title>my first website</title>
 
 <link rel="stylesheet"  href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js" defer></script>
-<head>
+</head>
 
 <body>
+<section class="account">
+    <h2>Create Account / Login></h2>
+
+    <input type="email" id="authEmail" placeholder="Your Email">
+    <input type="password" id="authPassword" placeholder="Your Password">
+
+    <button id="signUpBtn">Create Account</button>
+    <button id="loginBtn">Login</button>
+
+    <p id="authMessage"></p>
+</section>
 
 <nav>
     <a href="#home">Home</a>
@@ -63,3 +75,6 @@
 <footer>
     <p>&copy; 2026 my first website. All rights resrved.</p>
 </footer>
+
+</body>
+</html>
